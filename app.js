@@ -1,13 +1,3 @@
-// class GroceryListItem extends React.Component {
-//     constructor(props) {
-//       super(props);
-//     }
-
-//     render() {
-//       return <li>{this.props.groceryItem}</li>;
-//     }
-// }
-
 class GroceryListItem extends React.Component {
     constructor(props) {
       super(props);
