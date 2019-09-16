@@ -23,13 +23,12 @@ class GroceryListItem extends React.Component {
     }
   }
 
-var GroceryList = () => {
-    const groceryItems = ['Cucumbers', 'Kale'];
+var GroceryList = (props) => {
     return (
       <ul>
-        {groceryItems.map((groceryItem) => <GroceryListItem key={groceryItem} groceryItem={groceryItem} />)}
+        {props.groceryItems.map((groceryItem) => <GroceryListItem key={groceryItem} groceryItem={groceryItem} />)}
       </ul>
     );
 }
-
-ReactDOM.render(<GroceryList />, document.getElementById('app'));
+var groceryList = ['Cucumbers', 'Arugula', 'Kale'];
+ReactDOM.render(<GroceryList groceryItems={groceryList}/>, document.getElementById('app'));
